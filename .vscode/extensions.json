@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "alfredbirk.tailwind-documentation",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+    "dsznajder.es7-react-js-snippets"
   ]
 }
