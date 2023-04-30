@@ -1,6 +1,8 @@
 import Navbar from "@/scenes/navbar";
+
 import { useEffect, useState } from "react";
 import { SelectedPage } from "./shared/types";
+import Home from "@/scenes/home";
 // type Props = {
 //   selectedPage: string;
 //   setSelectedPage: (page: string) => void;
@@ -27,7 +29,7 @@ function App() {
         window.removeEventListener("scroll", handleScroll);
       };
     };
-  });
+  }, []);
   return (
     <>
       <div className="app bg-gray-20">
@@ -36,6 +38,7 @@ function App() {
           setSelectedPage={setSelectedPage}
           isTopOfPage={isTopOfPage}
         />
+        <Home setSelectedPage={setSelectedPage} />
       </div>
     </>
   );
