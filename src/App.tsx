@@ -5,6 +5,7 @@ import { SelectedPage } from "./shared/types";
 import Home from "@/scenes/home";
 import OurClasses from "@/scenes/ourclasses";
 import Benefits from "./scenes/benefits";
+import ContactUs from "@/scenes/contactus"
 
 // type Props = {
 //   selectedPage: string;
@@ -44,6 +45,7 @@ function App() {
         <Home setSelectedPage={setSelectedPage} />
         <Benefits setSelectedPage={setSelectedPage} />
         <OurClasses setSelectedPage={setSelectedPage} />
+        <ContactUs setSelectedPage={setSelectedPage} />
       </div>
     </>
   );
